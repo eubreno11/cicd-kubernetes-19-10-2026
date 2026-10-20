@@ -1,7 +1,7 @@
 const express = require('express'); 
 const os = require('node:os'); 
 const app = express(); 
- 
+
 app.get('/', (req, res) => { 
   const pod = os.hostname(); 
   console.log(`Requisicao atendida por ${pod}`); 
